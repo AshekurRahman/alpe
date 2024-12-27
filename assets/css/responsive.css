@@ -75,6 +75,7 @@
     .offer__table__wrapper {
         padding: var(--spacing-md);
     }
+    
     .offer__table,
     .offer__table thead,
     .offer__table tbody,
