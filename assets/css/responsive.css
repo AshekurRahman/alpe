@@ -157,4 +157,8 @@
     .footer__widget .widget__title {
         font-size: calc(var(--font-size-base) * 1.2);
     }
+    [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+    }
 }
