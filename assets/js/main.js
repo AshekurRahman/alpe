@@ -2,6 +2,7 @@
 AOS.init({
   duration: 1200, // Animation duration in milliseconds
   once: true,     // Animation should happen only once
+  mobile: false,  // Disable animations on mobile devices
 });
 
 // Wrap jQuery code
