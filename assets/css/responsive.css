@@ -73,7 +73,7 @@
 
     /* Offer Table */
     .offer__table__wrapper {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md);
     }
     .offer__table,
     .offer__table thead,
