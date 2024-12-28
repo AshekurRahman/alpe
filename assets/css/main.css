@@ -444,6 +444,11 @@ nav.nav__menu .nav__list li {
 
 
 /* Offer Section */
+/* .offers__section .input__control,
+.offers__section .select__control {
+    background-color: rgba(255, 255, 255, 0.4);
+} */
+
 .offer__table__wrapper {
     border-radius: var(--border-radius-xl);
     background-color: #FAFAFA;
@@ -457,6 +462,9 @@ nav.nav__menu .nav__list li {
     border-radius: 99px;
     overflow: hidden;
     display: inline-block;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .offer__table {
@@ -465,6 +473,10 @@ nav.nav__menu .nav__list li {
     border-spacing: 0px var(--spacing-sm);
     /* Adjust spacing between table cells */
     margin: 0;
+}
+
+.offer__table tr {
+    cursor: pointer;
 }
 
 .offer__table th {
@@ -501,6 +513,42 @@ nav.nav__menu .nav__list li {
 .offer__table th:last-child,
 .offer__table td:last-child {
     border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+}
+
+.offer__modal__table {
+    margin-top: 0;
+}
+
+.offer__modal__table td {
+    background-color: var(--white);
+    border: 1px solid var(--gray-100);
+}
+
+.offer__modal__table tr:first-child td:first-child {
+    border-radius: var(--border-radius-lg) 0 0 0;
+}
+
+.offer__modal__table tr:first-child td:last-child {
+    border-radius:0 var(--border-radius-lg) 0 0;
+}
+
+
+.offer__modal__table tr:last-child td:first-child {
+    border-radius: 0 0 0 var(--border-radius-lg);
+}
+
+.offer__modal__table tr:last-child td:last-child {
+    border-radius: 0 0 var(--border-radius-lg) 0;
+}
+
+.offer__modal__table .label {
+    font-size: calc(var(--font-size-base) - 2px);
+}
+
+.offer__modal__table small {
+    font-size: calc(var(--font-size-base) - 6px);
+    line-height: calc(var(--line-height-base) - 6px);
+    color: var(--gray-600);
 }
 
 /* Deal Section */

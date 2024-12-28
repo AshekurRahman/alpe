@@ -119,11 +119,6 @@ select {
     transition: var(--transition-normal);
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 iframe {
     border: 0;
 }
@@ -166,7 +161,8 @@ hr {
 /* General Table Styling */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     margin: 20px 0;
     font-size: 16px;
     text-align: left;
@@ -561,7 +557,7 @@ table tbody td {
 .input__group label {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-medium);
-    color: var(--gray-700);
+    color: var(--black);
 }
 
 /* Error Message */
@@ -731,3 +727,87 @@ textarea.input__control {
     border-radius: var(--border-radius-lg);
 }
 
+
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination .page-link {
+    width: calc(var(--spacing-sm) * 5);
+    height: calc(var(--spacing-sm) * 5);
+    display: block;
+    border: 1px solid var(--gray-100);
+    line-height: calc(var(--spacing-sm) * 5);
+    font-weight: var(--font-weight-semibold);
+}
+
+.pagination a.page-link.active,
+.pagination a.page-link:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.pagination li:first-child .page-link {
+    border-radius: var(--border-radius-md) 0 0 var(--border-radius-md);
+    width: calc(var(--spacing-sm) * 4);
+}
+
+.pagination li:last-child .page-link {
+    border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+    width: calc(var(--spacing-sm) * 4);
+}
+
+/* Modal */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: var(--z-index-modal);
+}
+
+.modal__body {
+    background-color: var(--white);
+    padding: clamp(2rem, 5vw, 4rem);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--box-shadow-lg);
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.modal__header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.modal__content {
+    max-height: 64vh;
+    overflow: auto;
+}
+
+.modal__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+.line-x {
+    display: block;
+    width: 48px;
+    height: 1px;
+    background-color: var(--black);
+}
